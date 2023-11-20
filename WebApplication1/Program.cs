@@ -22,4 +22,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+// Update the UseUrls method to listen on port 80
+app.Run("http://*:80");
